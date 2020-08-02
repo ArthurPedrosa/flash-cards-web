@@ -11,7 +11,7 @@ export const ContainerCard = styled.div`
     display: flex; flex-direction: column; align-items: center; justify-content: space-around;
     color: #FD7F2C;
     min-height: 35rem;
-    .titleCard {
+    .title-card {
       font-weight: bolder;
       font-size: 2.5rem;
     }
@@ -20,7 +20,7 @@ export const ContainerCard = styled.div`
       width: 11rem; height: 11rem;
     }
 
-    .buttonStart {
+    .button-start {
       padding: .8rem 2rem;
       font-weight: bolder;
       color: #FD7F2C;

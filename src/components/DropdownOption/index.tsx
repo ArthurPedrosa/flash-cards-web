@@ -1,14 +1,14 @@
 import React from 'react';
 
-interface iDropdown {
+interface IDropdown {
   name: string;
   content: object;
 }
 
-const DropdownOption: React.FC<iDropdown> = ({
+const DropdownOption: React.FC<IDropdown> = ({
   name,
   content
-}: iDropdown) => {
+}: IDropdown) => {
   return (
     <button className="dropdown-option">{ name }</button>
   )

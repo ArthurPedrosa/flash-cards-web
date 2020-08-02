@@ -15,7 +15,7 @@ const Welcome: React.FC = () => {
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </span>
           </div>
-          <div className="cardMenu">
+          <div className="card-menu">
             <Card />
           </div>
         </div>

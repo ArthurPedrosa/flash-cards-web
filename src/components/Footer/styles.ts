@@ -6,7 +6,7 @@ export const FooterStyle = styled.div`
   background: #cdcdcd;
   min-height: 80px;
 
-  .textArea {
+  .text-area {
     width: 100%;
     display: flex; justify-content: space-between; align-items: center;
     max-width: 980px;

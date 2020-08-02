@@ -2,16 +2,16 @@ import React from 'react';
 
 import { ContainerDeck } from './style'
 
-interface iDeck {
+interface IDeck {
   name: string;
 }
 
-const Deck: React.FC<iDeck> = ({
+const Deck: React.FC<IDeck> = ({
   name
-}: iDeck) => {
+}: IDeck) => {
   return (
       <ContainerDeck>
-        <div className="imageSlot">
+        <div className="image-slot">
           {/* slot to put images */}
         </div>
         <span className="text">{name}</span>

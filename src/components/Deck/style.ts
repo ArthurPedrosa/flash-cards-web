@@ -10,7 +10,7 @@ export const ContainerDeck = styled.div`
   border-radius: 0.4rem;
   border: 1px solid #cdcdcd;
 
-  .imageSlot {
+  .image-slot {
     background: #fff;
     border: 1px solid #cdcdcd;
     border-radius: 0.2rem;

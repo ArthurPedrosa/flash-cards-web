@@ -22,7 +22,7 @@ export const Container = styled.div`
         margin-bottom: 20px;
       }
     }
-    .cardMenu {
+    .card-menu {
       position: relative;
       top: 3%
     }
