@@ -1,33 +1,15 @@
 import React from 'react';
 
-import { FiPlusSquare } from 'react-icons/fi';
+import  NavBar  from '../NavBar'
+import  Welcome  from '../Welcome'
+
 import { Container } from './styles';
 
-import Logo from '../../assets/logo.svg';
-
-interface IHeaderProps {
-  openModal: () => void;
-}
-
-const Header: React.FC<IHeaderProps> = ({ openModal }) => (
+const Header: React.FC = () => (
   <Container>
     <header>
-      <img src={Logo} alt="GoRestaurant" />
-      <nav>
-        <div>
-          <button
-            type="button"
-            onClick={() => {
-              /* TODO OPEN MODAL */
-            }}
-          >
-            <div className="text">Novo Prato</div>
-            <div className="icon">
-              <FiPlusSquare size={24} />
-            </div>
-          </button>
-        </div>
-      </nav>
+      <NavBar/>
+      <Welcome />
     </header>
   </Container>
 );
