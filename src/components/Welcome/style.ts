@@ -1,14 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* background-image: linear-gradient(#ff9d2f, #ff6126);
-  transform: skewY(-6deg);
-  transform-origin: top left; */
   width: 100%;
   display: flex;
   justify-content: center;
   .content {
-    max-width: 1080px;
+    max-width: 980px;
     display: flex;
     align-items: center;
     justify-content: space-between;
