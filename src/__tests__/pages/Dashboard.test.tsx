@@ -4,11 +4,11 @@ import { render, fireEvent, act, wait } from '@testing-library/react';
 import AxiosMock from 'axios-mock-adapter';
 import api from '../../services/api';
 
-import Dashboard from '../../pages/Dashboard';
+import Main from '../../pages/Main';
 
 const apiMock = new AxiosMock(api);
 
-describe('Dashboard', () => {
+describe('Main', () => {
   it('should be able to list all the food plates from your api', async () => {
     apiMock.onGet('foods').reply(200, [
       {
@@ -43,7 +43,7 @@ describe('Dashboard', () => {
       },
     ]);
 
-    const { getByText, getByTestId } = render(<Dashboard />);
+    const { getByText, getByTestId } = render(<Main />);
 
     await wait(() => expect(getByText('Ao molho')).toBeTruthy(), {
       timeout: 200,
@@ -81,7 +81,7 @@ describe('Dashboard', () => {
     apiMock.onGet('foods').reply(200, []);
 
     const { getByText, getByTestId, getByPlaceholderText, debug } = render(
-      <Dashboard />,
+      <Main />,
     );
 
     act(() => {
@@ -156,7 +156,7 @@ describe('Dashboard', () => {
     ]);
 
     const { getByText, getByTestId, getByPlaceholderText } = render(
-      <Dashboard />,
+      <Main />,
     );
 
     await wait(() => expect(getByText('Ao molho')).toBeTruthy(), {
@@ -245,7 +245,7 @@ describe('Dashboard', () => {
 
     apiMock.onDelete('foods/1').reply(204);
 
-    const { getByText, getByTestId } = render(<Dashboard />);
+    const { getByText, getByTestId } = render(<Main />);
 
     await wait(() => expect(getByText('Ao molho')).toBeTruthy(), {
       timeout: 200,
@@ -280,7 +280,7 @@ describe('Dashboard', () => {
       },
     ]);
 
-    const { getByText, getByTestId } = render(<Dashboard />);
+    const { getByText, getByTestId } = render(<Main />);
 
     await wait(() => expect(getByText('Ao molho')).toBeTruthy(), {
       timeout: 200,

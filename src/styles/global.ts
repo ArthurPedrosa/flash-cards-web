@@ -8,15 +8,25 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  body {
-    background: #fff;
-    color: #FFF;
-    -webkit-font-smoothing: antialiased;
+  html {
+    font-family: 'Roboto', --apple-system, system-ui, sans-serif;
+    /* na fonte a cada 1 rem será cosinderado 10px */
+    font-size: 62.5%;
+    background-color: #fafafa;
+    color: #333;
   }
 
-  body, input, button {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+  body {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  input, button {
+    background: none;
+  }
+
+  ul {
+    list-style: none;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
