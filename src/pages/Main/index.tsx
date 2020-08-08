@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -16,17 +16,12 @@ const Main: React.FC = () => {
 
         <SubTitle>
           <span className="title">Lorem Ipsum</span>
-          <p>
+          <p className="text">
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
           </p>
         </SubTitle>
 
         <PrimaryDeck> {/* Decks principais Temporariamente assim, depois colocamos em um "v-for" */}
-          <div className="mg">
-            <Deck
-              name="Animais"
-            />
-          </div>
 
           <div className="mg">
             <Deck
@@ -37,12 +32,6 @@ const Main: React.FC = () => {
           <div className="mg">
             <Deck
               name="Paises"
-            />
-          </div>
-
-          <div className="mg">
-            <Deck
-              name="Comidas"
             />
           </div>
         </PrimaryDeck>

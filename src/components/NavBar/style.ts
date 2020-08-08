@@ -17,7 +17,9 @@ export const Container = styled.div`
 
   .menu-list {
     display: flex;
+    background: transparent;
   }
+
   @keyframes shake {
   0% { transform: rotate(0deg); }
   10% { transform: rotate(-3deg); }
@@ -36,9 +38,10 @@ export const Container = styled.div`
 export const DropdownStyles = styled.div`
   .dropdown-option {
     border: none;
-    color: #fff;
+    color: var(--color-title-white);
+    background: transparent;
     padding: 2rem 2.5rem;
-    font-size: 1.8rem;
+    font: 1.8rem Archivo;
 
     transition: opacity 0.2s;
 

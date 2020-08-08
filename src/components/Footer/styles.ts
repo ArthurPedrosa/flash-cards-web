@@ -4,7 +4,6 @@ export const FooterStyle = styled.div`
   display: flex; justify-content: center; align-items: center;
   border-top: 2px solid #c9c9c9;
   background: #cdcdcd;
-  min-height: 80px;
 
   .text-area {
     width: 100%;

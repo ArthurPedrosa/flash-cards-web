@@ -6,16 +6,15 @@ export const ContainerDeck = styled.div`
   max-width: 18rem;
   min-height: 20rem;
   padding: 2rem 2rem;
-  background: #eee;
   border-radius: 0.4rem;
-  border: 1px solid #cdcdcd;
+  cursor: pointer;
 
   .image-slot {
     background: #fff;
     border: 1px solid #cdcdcd;
-    border-radius: 0.2rem;
-    width: 13rem;
-    height: 8rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
   }
 
   .text {
