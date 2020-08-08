@@ -13,18 +13,6 @@ const Footer: React.FC = () => (
           <li>Wender Machado [git] [linkedin]</li>
         </ul>
       </ul>
-
-      <ul> Lorem Ipsum
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-      </ul>
-
-      <ul> Lorem Ipsum
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-      </ul>
     </div>
   </FooterStyle>
 );

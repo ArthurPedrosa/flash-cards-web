@@ -4,15 +4,29 @@ export const MainStyle = styled.div`
 `;
 
 export const SubTitle = styled.div`
-  margin-top: 5rem;
+
   display: flex; flex-direction: column;
-  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 3rem 0;
+
   .title {
-    font-size: 5rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 4rem;
     font-weight: 600;
+  }
+
+  .text {
+    align-self: center;
+    max-width: 400px;
+  }
+
+  @media (min-width: 1100px) {
+    font-size: 1.7rem;
+
+    .text {
+      align-self: center;
+      max-width: 1080px;
+    }
   }
 `;
 
@@ -26,16 +40,27 @@ export const PrimaryDeck = styled.div`
 `;
 
 export const FinalText = styled.div`
-  margin: 5rem 0;
+  display: flex; flex-direction: column;
+  text-align: center;
   width: 100%;
-  display: flex; flex-direction: column; align-items: center;
+  margin: 5rem 0;
   .title {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 600;
   }
 
   .text {
-    max-width: 980px;
+    align-self: center;
+    max-width: 400px;
+  }
+
+  @media (min-width: 1100px) {
+    font-size: 1.7rem;
+
+    .text {
+      align-self: center;
+      max-width: 1080px;
+    }
   }
 `;

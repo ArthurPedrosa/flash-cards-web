@@ -1,39 +1,53 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  :root {
+    font-size: 60%;
+
+    --color-background: #F0F0F7;
+    --color-success: #41A662;
+    --color-success-dark: #3B9A58;
+    --color-primary-light: #ff9d2f;
+    --color-primary: #ff6126;
+    --color-title-white: #FFFFFF;
+  }
+
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     outline: 0;
+    box-sizing: border-box;
   }
 
-  html {
-    font-family: 'Roboto', --apple-system, system-ui, sans-serif;
-    /* na fonte a cada 1 rem será cosinderado 10px */
-    font-size: 62.5%;
-    background-color: #fafafa;
-    color: #333;
+  html, body, #root {
+    height: 100vh;
   }
 
   body {
     font-size: 1.6rem;
-    line-height: 2.6rem;
+    background-color: var(--color-background);
   }
 
-  input, button {
-    background: none;
+  body,
+  input,
+  button,
+  textarea {
+    font: 500 1.6rem Poppins;
+    color: -color-text-base;
   }
 
-  ul {
+  li {
     list-style: none;
   }
 
-  h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 500;
+  .container {
+    width: 90vw;
+    max-width: 700px;
   }
 
-  button {
-    cursor: pointer;
+  @media (min-width: 700px) {
+    :root {
+      font-size: 62.5%;
+    }
   }
 `;
