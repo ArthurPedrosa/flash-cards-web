@@ -17,8 +17,8 @@ const NavBar: React.FC = () => {
           <ul className="menu-list">
             <li>
               <DropdownOption
-                name="Categorias"
-                content={() => <h1>Categorias</h1>}
+                name="Sobre"
+                content={() => <h1>Sobre</h1>}
               />
             </li>
           </ul>

@@ -44,7 +44,7 @@ export const ContainerCard = styled.div`
     min-width: 25rem; min-height: 35rem;
     border: 1px solid #cdcdcd;
     box-shadow: 5px 5px 5px #c4c4c4;
-    background: #e4e9f4;
+    background: var(--color-title-white);
 
     .card {
       display: flex; flex-direction: column; align-items: center; justify-content: space-around;
@@ -62,7 +62,7 @@ export const ContainerCard = styled.div`
 
       .logo {
         display: block;
-        width: 25rem; height: 25rem;
+        width: 25rem; height: 18rem;
       }
     }
   }
