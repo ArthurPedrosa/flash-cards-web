@@ -6,12 +6,8 @@ const Footer: React.FC = () => (
   <FooterStyle>
     <div className="textArea">
       <ul>
-        <li>Desenvolvedores</li>
-        <ul>
-          <li>Arthur Pedrosa [git] [linkedin]</li>
-          <li>Gabriel Araujo [git] [linkedin]</li>
-          <li>Wender Machado [git] [linkedin]</li>
-        </ul>
+        <li>Sobre</li>
+        <li>GuessCard</li>
       </ul>
     </div>
   </FooterStyle>
