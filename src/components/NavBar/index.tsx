@@ -1,10 +1,10 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/logoYellow.svg';
 
-import { Container, DropdownStyles } from './style'
-import DropdownOption from '../DropdownOption'
-import { Link } from 'react-router-dom';
+import { Container, DropdownStyles } from './style';
+import DropdownOption from '../DropdownOption';
 
 const NavBar: React.FC = () => {
   return (
@@ -16,16 +16,13 @@ const NavBar: React.FC = () => {
         <nav>
           <ul className="menu-list">
             <li>
-              <DropdownOption
-                name="Sobre"
-                content={() => <h1>Sobre</h1>}
-              />
+              <DropdownOption name="Sobre" content={() => <h1>Sobre</h1>} />
             </li>
           </ul>
         </nav>
       </Container>
     </DropdownStyles>
-  )
-}
+  );
+};
 
 export default NavBar;

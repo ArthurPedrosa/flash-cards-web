@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MainStyle = styled.div`
   display: grid;
-  grid-template-rows: 8% auto 5%;
+  grid-template-rows: 8% auto;
   height: 100%;
 
   .game-area {

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const ContainerCard = styled.div`
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.8rem;
 
   .card {
@@ -16,9 +18,11 @@ export const ContainerCard = styled.div`
     }
 
     .button-start {
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       cursor: pointer;
-      padding: .8rem 2rem .8rem 1.5rem;
+      padding: 0.8rem 2rem 0.8rem 1.5rem;
       font-weight: bolder;
       background: var(--color-success);
       color: var(--color-title-white);
@@ -41,13 +45,17 @@ export const ContainerCard = styled.div`
     }
   }
   @media (min-width: 1100px) {
-    min-width: 25rem; min-height: 35rem;
+    min-width: 25rem;
+    min-height: 35rem;
     border: 1px solid #cdcdcd;
     box-shadow: 5px 5px 5px #c4c4c4;
     background: var(--color-title-white);
 
     .card {
-      display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
       min-height: 35rem;
 
       .title-card {
@@ -62,7 +70,8 @@ export const ContainerCard = styled.div`
 
       .logo {
         display: block;
-        width: 25rem; height: 18rem;
+        width: 25rem;
+        height: 18rem;
       }
     }
   }

@@ -1,5 +1,5 @@
-import React, { useState, useReducer } from 'react';
-import { AnswerStyle, AnswerWrongOrCorrectStyle } from './style'
+import React, { useState } from 'react';
+import { AnswerStyle, AnswerWrongOrCorrectStyle } from './style';
 
 interface IAnswer {
   index: number;
@@ -12,34 +12,44 @@ const Answer: React.FC<IAnswer> = ({
   answer,
   index,
   isCorrect,
-  why
+  why,
 }: IAnswer) => {
-  const [answerValidate, setAnswerValidate] = useState(0)
+  const NO_ANSWER = 0;
+  const ANSWER_WRONG = -1;
+  const ANSWER_RIGHT = 1;
 
-  function validateIsCorrect(pValidate: boolean) {
-    pValidate ? setAnswerValidate(1) : setAnswerValidate(-1)
+  const [answerValidate, setAnswerValidate] = useState(0);
+
+  function validateIsCorrect(pValidate: boolean): void {
+    pValidate
+      ? setAnswerValidate(ANSWER_RIGHT)
+      : setAnswerValidate(ANSWER_WRONG);
   }
 
   return (
     <AnswerStyle>
       <div className="answer-area">
-          {
-            answerValidate === 0 ?
-            (
-              <button className="answer" onClick={() => validateIsCorrect(isCorrect)}>
-                { answer }
-              </button>
-            ) : (
-              <AnswerWrongOrCorrectStyle className="answer" colorValidate={answerValidate}>
-                <p>
-                { answer } - { why }
-                </p>
-              </AnswerWrongOrCorrectStyle>
-            )
-          }
+        {answerValidate === NO_ANSWER ? (
+          <button
+            type="button"
+            className="answer"
+            onClick={() => validateIsCorrect(isCorrect)}
+          >
+            {answer}
+          </button>
+        ) : (
+          <AnswerWrongOrCorrectStyle
+            className="answer"
+            colorValidate={answerValidate}
+          >
+            <span>
+              {answer} - {why}
+            </span>
+          </AnswerWrongOrCorrectStyle>
+        )}
       </div>
     </AnswerStyle>
-  )
-}
+  );
+};
 
 export default Answer;
