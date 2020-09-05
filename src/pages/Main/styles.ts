@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-export const MainStyle = styled.div`
-`;
+export const MainStyle = styled.div``;
 
 export const SubTitle = styled.div`
-
-  display: flex; flex-direction: column;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   width: 100%;
   margin: 3rem 0;
@@ -31,7 +30,9 @@ export const SubTitle = styled.div`
 `;
 
 export const PrimaryDeck = styled.div`
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin-top: 5rem;
   .mg {
@@ -40,7 +41,8 @@ export const PrimaryDeck = styled.div`
 `;
 
 export const FinalText = styled.div`
-  display: flex; flex-direction: column;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   width: 100%;
   margin: 5rem 0;

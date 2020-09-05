@@ -5,13 +5,12 @@ interface IDropdown {
   content: object;
 }
 
-const DropdownOption: React.FC<IDropdown> = ({
-  name,
-  content
-}: IDropdown) => {
+const DropdownOption: React.FC<IDropdown> = ({ name, content }: IDropdown) => {
   return (
-    <button className="dropdown-option">{ name }</button>
-  )
-}
+    <button type="button" className="dropdown-option">
+      {name}
+    </button>
+  );
+};
 
-export default DropdownOption
+export default DropdownOption;

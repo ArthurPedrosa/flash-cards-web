@@ -155,9 +155,7 @@ describe('Main', () => {
       },
     ]);
 
-    const { getByText, getByTestId, getByPlaceholderText } = render(
-      <Main />,
-    );
+    const { getByText, getByTestId, getByPlaceholderText } = render(<Main />);
 
     await wait(() => expect(getByText('Ao molho')).toBeTruthy(), {
       timeout: 200,

@@ -29,12 +29,19 @@ export const AnswerStyle = styled.div`
   }
 `;
 
+const ANSWER_RIGHT = 1;
 export const AnswerWrongOrCorrectStyle = styled.p<IAnswerValidate>`
-    text-align: center;
-    border: 0.2rem solid;
-    opacity: 1 !important;
-    color: var(--color-title-white);
-    background-color: ${props => props.colorValidate == 1 ? 'var(--color-success-dark)' : 'var(--color-danger)'} !important;
-    border-color: ${props => props.colorValidate == 1 ? 'var(--color-success-dark)' : 'var(--color-danger)'} !important;
-    box-shadow: 3px 3px 3px #c4c4c4
+  text-align: center;
+  border: 0.2rem solid;
+  opacity: 1 !important;
+  color: var(--color-title-white);
+  background-color: ${props =>
+    props.colorValidate === ANSWER_RIGHT
+      ? 'var(--color-success-dark)'
+      : 'var(--color-danger)'} !important;
+  border-color: ${props =>
+    props.colorValidate === ANSWER_RIGHT
+      ? 'var(--color-success-dark)'
+      : 'var(--color-danger)'} !important;
+  box-shadow: 3px 3px 3px #c4c4c4;
 `;

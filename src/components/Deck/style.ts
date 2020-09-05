@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const ContainerDeck = styled.div`
   display: flex;
-  flex-direction: column; justify-content: space-around; align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   max-width: 18rem;
   min-height: 20rem;
   padding: 2rem 2rem;

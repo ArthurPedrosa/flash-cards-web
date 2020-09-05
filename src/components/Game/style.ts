@@ -5,6 +5,7 @@ export const GameStyle = styled.div`
   height: 100%;
   display: grid;
   grid-template-rows: 1fr auto;
+  align-items: center;
 
   .question {
     text-align: center;

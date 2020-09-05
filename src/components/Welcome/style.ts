@@ -24,11 +24,15 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1100px) {
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
 
     .content {
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       max-width: 980px;
 
       .title {
