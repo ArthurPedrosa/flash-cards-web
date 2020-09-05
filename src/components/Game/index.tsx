@@ -5,41 +5,28 @@ import Answer from '../Answer';
 
 import { GameStyle } from './style';
 
-const Game: React.FC = () => {
-  const Cards = [
-    {
-      text: 'Jeff Bezos',
-      isCorrect: true,
-      why: 'US$ 113 bilhões',
-    },
-    {
-      text: 'Bill Gates',
-      isCorrect: false,
-      why: 'US$ 98 bilhões',
-    },
-    {
-      text: 'Bernard Arnault e família',
-      isCorrect: false,
-      why: 'US$ 76 bilhões',
-    },
-    {
-      text: 'Warren Buffett',
-      isCorrect: false,
-      why: 'US$ 67,5 bilhões',
-    },
-  ];
+interface IAnswer {
+  text: string;
+  isCorrect: boolean;
+  why: string;
+}
+interface ICard {
+  question: string;
+  answers: IAnswer[];
+}
 
+const Game: React.FC<ICard> = ({ question, answers }) => {
   return (
     <GameStyle>
-      <CardGame />
+      <CardGame question={question} />
       <div className="answers">
-        {Cards.map((item, index) => (
+        {answers.map((answer, index) => (
           <Answer
-            key={item.text}
-            answer={item.text}
+            key={answer.text}
+            answer={answer.text}
             index={index}
-            isCorrect={item.isCorrect}
-            why={item.why}
+            isCorrect={answer.isCorrect}
+            why={answer.why}
           />
         ))}
       </div>

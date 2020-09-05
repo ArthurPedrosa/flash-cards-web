@@ -21,6 +21,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
+    "swr": "^0.3.2",
     "typescript": "~3.7.2",
     "yup": "^0.29.0"
   },
@@ -50,7 +51,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "update:master": "git fetch upstream && git merge upstream/master"
   },
   "eslintConfig": {
     "extends": "react-app"
