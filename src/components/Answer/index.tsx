@@ -18,18 +18,25 @@ const Answer: React.FC<IAnswer> = ({
   const ANSWER_WRONG = -1;
   const ANSWER_RIGHT = 1;
 
-  const [answerValidate, setAnswerValidate] = useState(0);
+  const [answerValidate, setAnswerValidate] = useState(NO_ANSWER);
+  const [showAllAnswer, setShowAllAnswer] = useState(false);
 
   function validateIsCorrect(pValidate: boolean): void {
     pValidate
       ? setAnswerValidate(ANSWER_RIGHT)
       : setAnswerValidate(ANSWER_WRONG);
+
+    console.log('resposta', answerValidate);
+
+    if (answerValidate === ANSWER_RIGHT) {
+      setShowAllAnswer(true);
+    }
   }
 
   return (
     <AnswerStyle>
       <div className="answer-area">
-        {answerValidate === NO_ANSWER ? (
+        {answerValidate === NO_ANSWER && showAllAnswer === false ? (
           <button
             type="button"
             className="answer"

@@ -1,27 +1,35 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/logoYellow.svg';
+import LogoFlashCard from '../../assets/LogoFlashCard.svg';
 
-import { Container, DropdownStyles } from './style';
-import DropdownOption from '../DropdownOption';
+import { Container, Menu } from './style';
 
 const NavBar: React.FC = () => {
   return (
-    <DropdownStyles>
+    <Menu>
       <Container>
         <Link to="/">
-          <img className="logo" src={Logo} alt="GuessCard" />
+          <img className="logo" src={LogoFlashCard} alt="FlashCard" />
         </Link>
         <nav>
           <ul className="menu-list">
             <li>
-              <DropdownOption name="Sobre" content={() => <h1>Sobre</h1>} />
+              <a href="#" className="link">
+                Categorias
+              </a>
+              <a href="#" className="link">
+                Ajuda
+              </a>
+              <a href="#" className="link">
+                Sobre
+              </a>
             </li>
           </ul>
         </nav>
       </Container>
-    </DropdownStyles>
+    </Menu>
   );
 };
 

@@ -4,13 +4,16 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(150deg, #ff6200 15%, #fd7f2c);
+  margin: 0 auto;
+  background: var(--color-title-white);
   padding: 5px;
   width: 100%;
+  max-width: 1080px;
 
   .logo {
-    height: 6rem;
+    height: 3.2rem;
     cursor: pointer;
+    display: flex;
     &:hover,
     &:focus {
       animation: shake 1s;
@@ -60,19 +63,26 @@ export const Container = styled.div`
   }
 `;
 
-export const DropdownStyles = styled.div`
-  .dropdown-option {
+export const Menu = styled.div`
+  .link {
     border: none;
-    color: var(--color-title-white);
     background: transparent;
-    padding: 2rem 2.5rem;
+    padding: 1rem;
     font: 1.8rem Archivo;
+    color: #000;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: opacity 0.4s;
 
-    transition: opacity 0.2s;
+    &:hover {
+      opacity: 1;
+      border-bottom: 2px solid var(--color-primary);
+    }
+  }
 
-    &:hover,
-    &:focus {
-      opacity: 0.75;
+  @media (min-width: 1100px) {
+    .link {
+      padding: 1rem 3rem;
     }
   }
 `;

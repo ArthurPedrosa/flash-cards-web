@@ -4,21 +4,62 @@ export const Container = styled.div`
   width: 100%;
 
   .content {
-    margin: 0 20px;
-
+    margin-top: 3rem;
+    .lamp {
+      margin: 0 auto;
+      display: flex;
+      height: 10rem;
+    }
     .title {
       display: flex;
       flex-direction: column;
-      color: white;
       text-align: center;
       justify-content: center;
-      margin: 20px 0;
+      margin: 1rem 0;
 
       .text-title {
         text-align: center;
         font-size: 2.5rem;
         font-weight: bolder;
-        margin-bottom: 20px;
+        align-self: center;
+        width: fit-content;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--color-primary);
+      }
+
+      .text {
+        margin: 1rem 4rem;
+        color: #666;
+        font-weight: 500;
+      }
+    }
+
+    .button-start {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      padding: 0.8rem 2rem 0.8rem 1.5rem;
+      font-weight: bolder;
+      width: fit-content;
+      margin: 0 auto;
+      background: var(--color-success);
+      color: var(--color-title-white);
+      border: 2px solid var(--color-success);
+      border-radius: 0.4rem;
+      font: 1.8rem 500 Archivo;
+      transition: 0.3s;
+      text-decoration: none;
+
+      .play {
+        margin-right: 2rem;
+        fill: #fff;
+        height: 2rem;
+      }
+
+      &:hover {
+        background: var(--color-success-dark);
+        border: 2px solid var(--color-success-dark);
       }
     }
   }
@@ -31,17 +72,15 @@ export const Container = styled.div`
 
     .content {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      max-width: 980px;
 
-      .title {
-        max-width: 60%;
+      .lamp {
+        height: 13rem;
       }
 
-      .card-menu {
-        position: relative;
-        top: 20px;
+      .title {
+        max-width: 70%;
       }
     }
   }

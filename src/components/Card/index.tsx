@@ -10,7 +10,7 @@ const Card: React.FC = () => {
   return (
     <ContainerCard>
       <div className="card">
-        <span className="title-card">GuessCard</span>
+        <span className="title-card">FlashCard</span>
         <img className="logo" src={Logo} alt="GuessCard" />
         <Link to="/play" className="button-start">
           <img className="play" src={Play} alt="Play" />
