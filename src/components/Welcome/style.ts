@@ -31,6 +31,7 @@ export const Container = styled.div`
         margin: 1rem 4rem;
         color: #666;
         font-weight: 500;
+        font-size: 1.8rem;
       }
     }
 
@@ -38,6 +39,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: 0.3rem 0.3rem 0.5rem #a0a0a0;
       cursor: pointer;
       padding: 0.8rem 2rem 0.8rem 1.5rem;
       font-weight: bolder;
@@ -47,7 +49,8 @@ export const Container = styled.div`
       color: var(--color-title-white);
       border: 2px solid var(--color-success);
       border-radius: 0.4rem;
-      font: 1.8rem 500 Archivo;
+      font: 500 Archivo;
+      font-size: 1.7rem;
       transition: 0.3s;
       text-decoration: none;
 

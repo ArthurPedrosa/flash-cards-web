@@ -15,6 +15,10 @@ export const MainStyle = styled.div`
     }
   }
 
+  .half-bottom {
+    height: 50vh;
+  }
+
   @media (min-width: 1100px) {
     .img-background .logo {
       width: 60rem;
@@ -30,13 +34,14 @@ export const SubTitle = styled.div`
   margin-bottom: 5rem 0;
 
   .title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
   }
 
   .text {
     align-self: center;
     max-width: 400px;
+    font-size: 1.8rem;
   }
 
   @media (min-width: 1100px) {
@@ -44,7 +49,8 @@ export const SubTitle = styled.div`
 
     .text {
       align-self: center;
-      font-size: 2rem;
+      font-size: 1.8rem;
+
       max-width: 1080px;
     }
   }
@@ -55,7 +61,7 @@ export const PrimaryDeck = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 30vh;
+  /* height: 30vh; */
 
   .mg {
     margin: 0 1rem;
@@ -76,13 +82,14 @@ export const FinalText = styled.div`
   margin: 5rem 0;
   .title {
     margin-bottom: 1rem;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
   }
 
   .text {
     align-self: center;
     max-width: 400px;
+    font-size: 1.8rem;
   }
 
   @media (min-width: 1100px) {

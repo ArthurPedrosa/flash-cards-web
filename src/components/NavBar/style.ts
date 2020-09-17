@@ -68,11 +68,12 @@ export const Menu = styled.div`
     border: none;
     background: transparent;
     padding: 1rem;
-    font: 1.8rem Archivo;
+    font: 1.6rem Archivo;
     color: #000;
     font-weight: bolder;
     text-decoration: none;
-    transition: opacity 0.4s;
+    opacity: 0.4;
+    transition: opacity 0.6s;
 
     &:hover {
       opacity: 1;
